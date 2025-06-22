@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academic Chatbot</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>Academic Help Bot</h2>
+      <div class="status-indicator" id="status-indicator"></div>
+    </div>
+    <div id="chat-box"></div>
+    <div class="input-area">
+      <input type="text" id="user-input" placeholder="Ask a question..." 
+             onkeypress="handleKeyPress(event)">
+      <button id="send-button" onclick="sendMessage()">Send</button>
+    </div>
+    <div class="suggestions">
+      <p>Try asking about:</p>
+      <button class="suggestion-btn" onclick="insertSuggestion('registration')">Registration</button>
+      <button class="suggestion-btn" onclick="insertSuggestion('courses')">Courses</button>
+      <button class="suggestion-btn" onclick="insertSuggestion('library hours')">Library Hours</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
